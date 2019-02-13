@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <h1 class = "h1">Looking for a Laugh? Click "Hear Joke" to crack up!</h1>
+
+ 
+
+    <form class = "form">
+      <fieldset>
+      <input id="JokeSubmit" type="submit" value="Hear Joke"></input>
+      </fieldset>
+    </form>
+
+       
+    <div id="JokeContent">
+    </div> 
+
+    <script>
+      window.onload = function(){
+        // Change this value to however many seconds you want to delay the text by.
+        var theDelay = 3;
+        var timer = setTimeout("showText()",theDelay*1000)
+      }
+      function showText(){
+        document.getElementById("delayedText").style.visibility = "visible";
+        document.getElementById("delayedText2").style.visibility = "visible";
+      }
+      </script>
+      </head>
+      <body>
+      <div id="delayedText" style="visibility:hidden">
+      </div>
+
+      <div id = "delayedText2" style="visibility:hidden">
+      <img src = "images/giphy.gif">
+      </div>
+
+      </body>
+      </html>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/scripts.js">
+    </script>
+
+<div class="footer">
+  <p class = "footer2">Click <a class = "b" href = "https://github.com/barnummk/CreativeLab2" target="_blank"> Here </a> for Git Hub Link</p>
+</div>
+
+  </body>
+</html>
